@@ -7,3 +7,15 @@ def factorial(n:int) -> int:
         return n * factorial(n-1)
 
 print(factorial(5))
+
+x: int = 0
+
+def incby(i:int) -> None:
+	assert i > 0
+	global x
+	x = x + i + 1 # error 
+
+print("x:", x)
+incby(4); incby(2)
+
+print("x:", x)
