@@ -13,7 +13,7 @@ x: int = 0
 def incby(i:int) -> None:
 	assert i > 0
 	global x
-	x = x + i + 1 # error 
+	x = x + i 
 
 print("x:", x)
 incby(4); incby(2)
